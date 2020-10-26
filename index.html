@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="heading">
+        <div id="title-container">
+            <h1>Meme Generator</h1>
+            <h3>Fill out the form to add a meme to the page.</h3>
+        </div>
+        <form action="#">
+            <label for="img">Image Source:
+                <input type="text" name="img" placeholder="Image URL">
+            </label>
+            <label for="top-line">Top Line:
+                <input type="text" name = "top-line">
+            </label>
+            <label for="bottom-line">Bottom Line:
+                <input type="text" name = "bottom-line">
+            </label>
+            <input type="submit">
+        </form>
+    </section>
+    <section id="meme-container">
+        <div class="meme-flex">
+            <div class="meme">
+                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*" alt="Image">
+                <h4 class = 'top-text'>Top text f</h4>
+                <h4 class = 'bottom-text'>Bottom text for the meme goes here</h4>
+                <div class="remove-text-container">
+                    <h3 class = 'remove-text'>X</h3>
+                </div>
+                
+            </div>
+        </div>
+        <div class="meme-flex">
+            <div class="meme">
+                <img src="https://images.pexels.com/photos/1319515/pexels-photo-1319515.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Image">
+                <h4 class = 'top-text'>Top text for the meme goes here</h4>
+                <h4 class = 'bottom-text'>Bottom text for </h4>
+                <div class="remove-text-container">
+                    <h3 class = 'remove-text'>X</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script src = "app.js">  </script>
+</body>
+</html>
