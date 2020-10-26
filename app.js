@@ -42,5 +42,25 @@ function makeMeme(img, topLine, bottomLine) {
 }
 
 memeContainer.addEventListener('click', function(event) {
-    event.target.parentElement.parentElement.remove();
-})
+    if (event.target.className === "remove-text-container"){
+        event.target.parentElement.parentElement.remove();
+    }  
+});
+
+
+
+
+function randomRGB () {
+    // const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    return `rgb(0,${g}, ${b})`
+}
+
+const letters = document.querySelectorAll('span')
+
+setInterval(function(){
+    for( let letter of letters ) {
+        letter.style.color = randomRGB();
+    }
+}, 2000)
